@@ -4,9 +4,11 @@ require "capistrano/setup"
 # Include default deployment tasks
 require "capistrano/deploy"
 require "capistrano/rvm"
+require "capistrano/yarn"
 require "capistrano/bundler"
 require "capistrano/rails"
 require "capistrano/ssh_doctor"
+require 'capistrano/nvm'
 require 'capistrano/nginx'
 require 'capistrano/puma'
 require 'capistrano/puma/nginx'
@@ -17,6 +19,7 @@ install_plugin Capistrano::SCM::Git
 install_plugin Capistrano::Puma
 install_plugin Capistrano::Puma::Workers
 install_plugin Capistrano::Puma::Systemd
+install_plugin Capistrano::Puma::Nginx
 
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined

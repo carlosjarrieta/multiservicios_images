@@ -1,5 +1,5 @@
 namespace :config_files do
-  desc 'Upload yml files inside config folder'
+  desc 'Upload config files to shared path'
   task :upload do
     on roles(:app) do
       execute "mkdir -p #{shared_path}/config"

@@ -26,7 +26,9 @@ group :development do
   gem "capistrano-bundler", require: false
   gem "capistrano-rails", require: false
   gem "capistrano-rvm", github: "capistrano/rvm", require: false
+  gem "capistrano-nvm", require: false
   gem "capistrano-ssh-doctor", require: false
+  gem "capistrano-yarn"
   gem "capistrano3-puma", "~> 5.2"
   gem "capistrano3-nginx", "~> 3.0"
   gem "capistrano-upload-config", "~> 0.9.0"
