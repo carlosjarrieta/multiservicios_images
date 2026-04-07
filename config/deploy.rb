@@ -1,5 +1,5 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.13.0"
+lock "~> 3.18"
 
 set :application, "caimages"
 set :scm, :git
@@ -8,8 +8,7 @@ set :branch, "main"
 set :user, "deploy"
 
 # RVM configuration
-set :rvm_type, :system
-set :rvm_ruby_version, "2.7.8"
+set :rvm_ruby_version, "3.2.2"
 
 set :default_env, {
   'NODE_OPTIONS' => '--openssl-legacy-provider',
