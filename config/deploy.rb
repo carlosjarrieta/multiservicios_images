@@ -3,11 +3,12 @@ lock "~> 3.13.0"
 
 set :application, "caimages"
 set :scm, :git
-set :repo_url, "ssh://git@bitbucket.org:22/carlosjarrieta/api_images.git"
-set :branch, "master"
+set :repo_url, "git@github.com:carlosjarrieta/multiservicios_images.git"
+set :branch, "main"
 set :deploy_via, :copy
 set :user, "deploy"
 set :rvm_ruby_version, "2.7.8"
+set :rvm_type, :system
 
 # Default deploy_to directory is /var/www/my_app
 set :deploy_to, "/home/deploy/www/caimages"
