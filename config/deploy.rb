@@ -8,6 +8,7 @@ set :branch, "main"
 set :user, "deploy"
 
 # RVM configuration
+set :rvm_type, :system
 set :rvm_ruby_version, "2.7.8"
 
 set :default_env, {
