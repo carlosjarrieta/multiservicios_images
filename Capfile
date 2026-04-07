@@ -12,7 +12,6 @@ require 'capistrano/ssh_doctor'
 require 'capistrano/nginx'
 require 'capistrano/puma'
 require 'capistrano/puma/nginx'
-require 'capistrano/rails/console'
 require 'capistrano/scm/git'
 
 install_plugin Capistrano::SCM::Git
