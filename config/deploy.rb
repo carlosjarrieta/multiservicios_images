@@ -24,7 +24,7 @@ set :nvm_map_bins, %w{node npm yarn}
 set :yarn_flags, []
 
 # Deploy configuration
-set :deploy_to, "/home/deploy/www/caimages"
+set :deploy_to, "/home/deploy/www/multiservicios/caimages"
 set :deploy_via, :remote_cache
 set :linked_files, %w{config/database.yml config/master.key}
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads node_modules}
