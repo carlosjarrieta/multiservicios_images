@@ -7,7 +7,7 @@ gem "rails", "6.1.7.10"
 gem "mysql2", ">= 0.4.4", "< 0.6.0"
 gem "puma", "~> 5.0"
 
-gem "knock"
+gem "jwt"
 gem "bcrypt", "~> 3.1"
 
 gem "bootsnap", ">= 1.1.0", require: false
