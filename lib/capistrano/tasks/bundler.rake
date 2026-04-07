@@ -7,4 +7,4 @@ namespace :bundler do
   end
 end
 
-before 'bundler:config', 'bundler:install_version'
+# before 'bundler:config', 'bundler:install_version'

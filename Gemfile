@@ -13,7 +13,7 @@ gem "bcrypt", "~> 3.1"
 gem "bootsnap", ">= 1.1.0", require: false
 
 gem "rack-cors"
-# gem "carrierwave"
+gem "carrierwave", "~> 3.1"
 gem "ed25519", "~> 1.3"
 gem "bcrypt_pbkdf", "~> 1.1"
 
@@ -38,10 +38,9 @@ group :development do
   gem "capistrano-yarn"
   gem "capistrano3-puma", "~> 5.2"
   gem "capistrano3-nginx", "~> 3.0"
-  gem "capistrano-upload-config", "~> 0.9.0"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem "carrierwave", "~> 3.1"
+

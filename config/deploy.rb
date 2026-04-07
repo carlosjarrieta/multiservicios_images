@@ -56,5 +56,3 @@ set :pty, true
 set :use_sudo, false
 set :ssh_options, { forward_agent: true, user: fetch(:user), keys: %w(~/.ssh/id_ed25519) }
 
-# Hooks
-before 'deploy:starting', 'config_files:upload'
