@@ -2,7 +2,6 @@
 lock "~> 3.18"
 
 set :application, "caimages"
-set :scm, :git
 set :repo_url, "git@github.com:carlosjarrieta/multiservicios_images.git"
 set :branch, "main"
 set :user, "deploy"
