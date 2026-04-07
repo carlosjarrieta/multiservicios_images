@@ -42,6 +42,12 @@ set :puma_preload_app, true
 set :puma_worker_timeout, nil
 set :puma_init_active_record, true
 
+# Nginx configuration
+set :nginx_server_name, "images.multiserviciosonline.co"
+set :nginx_config_name, "#{fetch(:application)}_#{fetch(:stage)}"
+set :nginx_flags, 'fail_timeout=0'
+set :nginx_http_flags, 'proxy_connect_timeout 600; proxy_read_timeout 600; proxy_send_timeout 600'
+
 # Only for apis (no assets)
 set :assets_roles, []
 
